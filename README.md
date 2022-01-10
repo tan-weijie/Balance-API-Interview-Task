@@ -50,13 +50,13 @@ const userBalances = {
 
 ## Questions
 __1. (Optional) If you didn’t have time to complete your intended design, what else would you have done?__
-> ANSWER
+> Nil
 
 __2. Which took the most time? What did you find most difficult?__
-> ANSWER
+> It was my first time using mocha and chai for testing, so I have to spend some time researching and reading their documentations.
 
 __3. If we wanted the balance to update on the frontend more often (10 times per second), how would you improve the current system to handle this?__
-> ANSWER
+> I would use WebSockets server instead.
 
 __4. How did you find the test overall? If you have any suggestions on how we can improve the test, we'd love to hear them!__
-> ANSWER
+> I find the test so much more practical compared to the typical algorithm questions given in technical assignments. And I feel that it is a better way for the team to look at how the applicant codes.
