@@ -1,19 +1,16 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const server = require('./index');
+const server = require('./index')
 
-const { expect } = chai;
-
+chai.should(); 
 chai.use(chaiHttp);
 
 describe("API routes", () => {
   // GET route
-  it("/"), async () => {
-    chai.request(server)
-      .get("/api/user-1")
-      .end((err, response) => {
-        response.data.should.be.a('string');
-      })
-      .done();
-  }
+  it("/api/:user should display balance of user", async () => {
+    const res = await chai.request(server).get('/api/user-1');
+    res.should.have.status(200);
+    res.body.should.be.a('object');
+    res.body.should.have.property('balance');
+  });
 });
